@@ -22,7 +22,7 @@ function traverse(node) {
 
 // Produces a link to a search for an isbn on gen.lib.rus.ec
 function generateBookLink(isbn) {
-  var url = "http://gen.lib.rus.ec/search.php?req=" + isbn + "&column=identifier\""
+  var url = "https://libgen.rs/search.php?req=" + isbn + "&column=identifier\""
   var hyperLink = document.createElement('a');
   var linkText = document.createTextNode(isbn);
   hyperLink.appendChild(linkText);
